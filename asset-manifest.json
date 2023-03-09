@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Andrewyare.github.io/react-project/static/css/main.330bb853.css",
-    "main.js": "/Andrewyare.github.io/react-project/static/js/main.cdb840be.js",
-    "index.html": "/Andrewyare.github.io/react-project/index.html",
-    "main.330bb853.css.map": "/Andrewyare.github.io/react-project/static/css/main.330bb853.css.map",
-    "main.cdb840be.js.map": "/Andrewyare.github.io/react-project/static/js/main.cdb840be.js.map"
+    "main.css": "/react-project/static/css/main.330bb853.css",
+    "main.js": "/react-project/static/js/main.cdb840be.js",
+    "index.html": "/react-project/index.html",
+    "main.330bb853.css.map": "/react-project/static/css/main.330bb853.css.map",
+    "main.cdb840be.js.map": "/react-project/static/js/main.cdb840be.js.map"
   },
   "entrypoints": [
     "static/css/main.330bb853.css",
