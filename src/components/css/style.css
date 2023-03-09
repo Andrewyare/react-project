@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+html{
+		background-color:#f8f8ff;
+}
+html,body{
+padding:0px;
+margin:0px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+}}
+body{
+	font-family: 'Nunito', sans-serif;
+}
+.post{
+	max-width: 400px;
+	margin: 10px auto;
+	background: #ffffffcf;
+	border-radius: 5px;
+	color: #434343;
+	padding: 25px 20px;
+}
+.post__head{
+	display: flex;
+	flex-direction: row;
+	gap:15px;
+	position: relative;
+}
+.post__user{
+	font-weight: 700;
+}
+.post__id{
+	font-weight: 700;
+}
+.post__title{
+	text-align: center;
+	margin: 30px auto;
+	font-weight: 700;
+}
+.post__body{
+	display: block;
+}
+.form__hide{
+	position: relative;
+	
+}
+.form__button button{
+	background-color: #646ff0;
+	border:none;
+	border-radius: 5px;
+	padding: 15px 20px;
+	color:#fff;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 18px;
+}
+.post__form{
+	margin: 15px auto;
+	display:flex;
+	flex-direction:column;
+	max-width:400px;
+	justify-content:center;
+	gap:20px;
+	position: absolute;
+	opacity: 0;
+	top: -250px;
+	z-index:-5;
+}
+.post__form.active{
+	position: relative;
+	top: 0;
+	opacity: 1;
+	transition-duration: .5s;
+	z-index:1;
+}
+.post__text{
+	padding: 10px;
+}
+.post__btn{
+	display: block;
+	max-width: 120px;
+	margin:5px auto;
+	background-color: #646ff0;
+	border:none;
+	border-radius: 5px;
+	padding: 15px 20px;
+	color:#fff;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 14px;
+	cursor: pointer;
+}
+.post__delete{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	font-size: 20px;
+	color:#585858;
+}
+.post__delete:hover{
+	background-color: #ccc;
+}
+.post__comment a{
+	color: black;
+	font-size: 18px;
+	display: block;
+}
+.header{
+	display:flex;
+	gap:15px;
+	margin:0px;
+	background-color:#646681;
+	padding:15px 50px;
+}
+.header__item{
+	padding:10px 15px;
+	font-size:18px;
+	font-weight: 700;
+}
+.header__link{
+	text-decoration: none;
+	color:#f8f8ff;
+	transition-duration: .2s;
+}
+.header__link:hover{
+	color:#e73c7e
+}
+button{
+	cursor: pointer;
+}
+#customers {
+	font-family: inherit;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  #customers td, #customers th {
+	padding: 8px;
+  }
+  #customers tr{
+	background: #ffffffcf;
+	border-radius: 5px;
+	color: #585858;
+  }
+  
+  #customers th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background: #585858;
+	color: #ffffffcf;
+  }
+td a {
+	color: inherit;
+	font-size: 24px;
+	margin-left: 5px;
+}
+.comment{
+	max-width: 400px;
+	margin: 10px auto;
+	background: #ffffffcf;
+	padding: 25px 40px;
+	border-radius: 20px;
+}
+.comment__head{
+	display: flex;
+	flex-direction: row;
+	gap:15px;
+	position: relative;
+}
+.comment__user{
+	font-weight: 700;
+}
+.comment__title{
+	text-align: center;
+	margin: 30px auto;
+	font-weight: 700;
+}
+.comment__body{
+	display: block;
+}
+.comment__delete{
+	position: absolute;
+	right: 0;
+	}
+.comment__delete:after{
+		display: inline-block;
+		content: "\00d7";
+		font-size: 20px;
+	}
+
+.todo__headings{
+	text-align:center;
+	color:#646681;
+	font-weight:700;
+	font-size:30px;
+}
+.todo{
+	position: relative;
+	margin: 15px auto;
+	background: #ffffffcf;
+	border-radius: 5px;
+	color: #585858;
+	padding: 15px 10px;
+	display: flex;
+}
+.todo__page{
+	margin:0px auto;
+	max-width: 700px;
+}
+.todo__search input{
+	width: 96%;
+	background-color: #cccdde;
+	font-size:18px;
+	border:none;
+	border-radius:5px;
+	padding:10px 15px;
+	font-family:inherit;
+	color:#585858;
+}
+.todo__input{
+	background-color: #cccdde;
+	font-size:18px;
+	border:none;
+	border-radius:5px;
+	padding:10px 15px;
+	font-family:inherit;
+	color:#585858;
+}
+.todo__list{
+	background-color: #ecedf6;
+	padding: 20px;
+	border-radius: 5px;
+}
+.todo__head{
+	display: flex;
+	flex-direction: row;
+	gap:15px;
+	position: relative;
+}
+.todo__check{
+	font-weight: 700;
+	position: relative;
+}
+.todo__title{
+}
+.todo__body{
+	margin: 10px auto;
+	font-weight: 700;
+}
+.todo__done{
+	margin: 10px auto;
+	font-weight: 700;
+	color:#898989;
+	text-decoration:line-through;
+}
+.todo__delete{
+	position: absolute;
+	right: 10px;
+	top:50%;
+	transform: translateY(-50%);
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	font-size: 20px;
+	color:#585858;
+}
+.todo__delete:hover{
+	background-color: #ccc;
+
+}
+.todo__navbar{
+	max-width: 740px;
+	margin:10px auto;
+	display: flex;
+	justify-content: space-between;
+}
+.todo__add{
+	background-color: #646ff0;
+	border:none;
+	border-radius: 5px;
+	padding: 15px 20px;
+	color:#fff;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 18px;
+}
+.todo__link select{
+	background-color: #cccdde;
+	width: 150px;
+	padding: 15px;
+	border:none;
+	border-radius: 5px;
+	color:#585858;
+	font-size: 16px;
+	font-family: inherit;
+}
+select *:hover{
+	background-color: #646ff0;
+}
+/* Customize the label (the container) */
+.todo__check {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .todo__check input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	border-radius: 2px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .todo__check:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .todo__check input:checked ~ .checkmark {
+	background-color: #646ff0;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .todo__check input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .todo__check .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+.post__page{
+	max-width: 600px;
+	margin:0 auto;
+}
+.post__button{
+	margin-top: 50px;
+}
+.post__list{
+	background-color: #ecedf6;
+	padding: 15px;
+	border-radius: 5px;
+	color: #585858;
+	margin-top: 10px;
+}
