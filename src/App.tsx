@@ -23,7 +23,7 @@ function App() {
 		<BrowserRouter>
 			<Header />
 			<Routes>
-				<Route path="/" element={<PostList />} />
+				<Route path="/" element={<UsersList />} />
 				<Route path="/users" element={<UsersList />} />
 				<Route path='/post/:userId' element={<PostUserList />} />
 				<Route path="/comment/:postId" element={<CommentsList />} />
